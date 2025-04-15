@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-secondary-900 text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-win {
+    color: theme('colors.win');
+  }
+  
+  .text-loss {
+    color: theme('colors.loss');
+  }
+  
+  .text-draw {
+    color: theme('colors.draw');
+  }
+}
